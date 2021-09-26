@@ -3,7 +3,7 @@ import { StyleSheet, Text, Image, View, SafeAreaView } from 'react-native'
 import tw from 'tailwind-react-native-classnames';
 import NavOptions from '../components/NavOptions';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
-import { GOOGLE_MAPS_KEY } from "@env"
+import { GOOGLE_MAPS_APIKEY } from "@env"
 
 const HomeScreen = ({ navigation }) => {
     return (
@@ -15,6 +15,20 @@ const HomeScreen = ({ navigation }) => {
                 />
 
                 <GooglePlacesAutocomplete
+                    styles={{
+                        container: {
+                            flex: 0,
+
+                        },
+                        textInput: {
+                            fontSize: 18,
+                        }
+                    }}
+                    query={{
+                        key: GOOGLE_MAPS_APIKEY,
+                        language: "en"
+                    }}
+                    onFail={error => console.error(error)}
                     nearbyPlacesAPI="GooglePlacesSearch"
                     debounce={400}
                     placeholder="Where From?"
