@@ -25,7 +25,7 @@ const HomeScreen = ({ navigation }) => {
                         }
                     }}
                     query={{
-                        key: GOOGLE_MAPS_APIKEY,
+                        key: `AIzaSyCDjDmBmPA2GvySnlA1jBWjtDxyYlwcFWo`,
                         language: "en"
                     }}
                     onFail={error => console.error(error)}
