@@ -35,14 +35,15 @@ const HomeScreen = ({ navigation }) => {
                     onPress={(data, details = null) => {
                         dispatch(
                             setOrigin({
-                                location: details.geometry.location,
+                                location:details.geometry.location,
                                 description: data.description
-                        }))
+                            })
+                        )
                         dispatch(setDestination(null))
                     }}
                     fetchDetails={true }
                     enablePoweredByContainer={false}
-                    onFail={error => console.error(error)}
+                    // onFail={error => console.error(error)}
                     nearbyPlacesAPI="GooglePlacesSearch"
                     debounce={400}
                     placeholder="Where From?"
