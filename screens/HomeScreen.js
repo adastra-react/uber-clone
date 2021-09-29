@@ -38,7 +38,6 @@ const HomeScreen = ({ navigation }) => {
                                 location: details.geometry.location,
                                 description: data.description
                         }))
-
                         dispatch(setDestination(null))
                     }}
                     fetchDetails={true }
