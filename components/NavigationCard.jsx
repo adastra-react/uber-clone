@@ -1,11 +1,12 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
+import tw from 'tailwind-react-native-classnames'
 
 const NavigationCard = () => {
     return (
-        <View>
+        <SafeAreaView style={tw`bg-white flex-1`} >
             <Text>sup</Text>
-        </View>
+        </SafeAreaView>
     )
 }
 
