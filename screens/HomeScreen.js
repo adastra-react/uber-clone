@@ -3,7 +3,8 @@ import { StyleSheet, Text, Image, View, SafeAreaView } from 'react-native'
 import tw from 'tailwind-react-native-classnames';
 import NavOptions from '../components/NavOptions';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
-import { GOOGLE_MAPS_APIKEY } from "@env"
+import { GOOGLE_MAPS_APIKEY } from "@env";
+import NavFavorites from '../components/NavFavorites';
 import { useDispatch } from 'react-redux';
 import { setDestination, setOrigin } from '../slices/navSlice';
 
@@ -48,8 +49,8 @@ const HomeScreen = ({ navigation }) => {
                     debounce={400}
                     placeholder="Where From?"
                 />
-
                 <NavOptions/>
+                <NavFavorites/>
             </View>
         </SafeAreaView>
     )
