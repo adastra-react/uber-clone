@@ -38,8 +38,8 @@ const Map = () => {
                         origin={origin.description}
                         destination={destination.description}
                         apikey="AIzaSyCDjDmBmPA2GvySnlA1jBWjtDxyYlwcFWo"
-                        strokeColor='black'
-                        strokeWidth={3}
+                        strokeColor='#03a9f4'
+                        strokeWidth={2}
                     />
                 )}
 
