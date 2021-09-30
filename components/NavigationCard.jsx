@@ -5,6 +5,7 @@ import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplet
 import { useDispatch } from 'react-redux'
 import tw from 'tailwind-react-native-classnames';
 import { setDestination } from '../slices/navSlice';
+import NavFavorites from './NavFavorites';
 
 
 const NavigationCard = () => {
@@ -36,6 +37,7 @@ const NavigationCard = () => {
                         }}
                     />
                 </View>
+                <NavFavorites/>
             </View>
         </SafeAreaView>
     )
