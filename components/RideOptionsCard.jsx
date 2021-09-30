@@ -8,6 +8,27 @@ const RideOptionsCard = () => {
 
     const navigation = useNavigation();
 
+    const data = [
+        {
+            id: "Uber-X-123",
+            title: "UberX",
+            multiplier: 1,
+            image: "https://links.papareact.com/3pn"
+        },
+        {
+            id: "Uber-X-456",
+            title: "Uber XL",
+            multiplier: 1,
+            image: "https://links.papareact.com/5w8"
+        },
+        {
+            id: "Uber-X-789",
+            title: "Uber LUX",
+            multiplier: 1,
+            image: "https://links.papareact.com/7pf"
+        },
+    ]
+
     return (
         <SafeAreaView style={tw`bg-white flex-1`}>
             <View >
